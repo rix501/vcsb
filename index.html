@@ -4,6 +4,13 @@
     <script type="text/javascript" charset="utf-8" src="./jquery-min.js"></script>
     <script type="text/javascript" charset="utf-8" src="./underscore-min.js"></script>
     <script type="text/javascript" charset="utf-8" src="./vcsb.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            Vcsb.getMsg(function(msg){
+                $("#theStory").html(msg);
+            });
+        });
+    </script>
 </head>
 <body>
     <span id="theStory"></span>
