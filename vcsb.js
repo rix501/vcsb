@@ -2,12 +2,12 @@
 
     var root = this;
     
-    var Vcsb;
+    var vcsb;
     if (typeof exports !== 'undefined') {
-        Vcsb = exports;
+        vcsb = exports;
     }
     else {
-        Vcsb = root.Vcsb = {};
+        vcsb = root.Vcsb = {};
     }
     
     var _ = root._;
@@ -19,7 +19,7 @@
         return Math.floor(Math.random() * (max - min + 1)) + min;
     };
 
-    Vcsb.getMsg = function(cb){
+    vcsb.getMsg = function(cb){
         $.ajax({
             url: "./parts.json",
             success: function(data){

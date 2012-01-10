@@ -13,6 +13,6 @@ Implemented so far:
 Example
 ------------
 
-    Vcsb.getMsg(function(msg){
+    vcsb.getMsg(function(msg){
     
     });
